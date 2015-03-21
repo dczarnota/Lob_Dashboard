@@ -2,9 +2,9 @@
   <div class="container main_custom">
     <p>Enter Your Lob API Key</p>
   </div>
-  <form>
+  <form name="apiKeyForm" ng-submit="getAPIkey(apiKey)" >
     <div class="form_custom">
-      <input class="form-control input-lg" type="text" placeholder="API Key">
+      <input class="form-control input-lg" type="text" ng-model="apiKey" placeholder="API Key">
     </div>
   </form>
 
